@@ -3,6 +3,7 @@
 - [About](#-about)
 - [How it works](#-works)
 - [Examples](#-examples)
+- [Screenshots](#-screenshots)
 
 ## ❓ About
 This tool let your server's users to get accounts through a secure and advanced system.    
@@ -22,6 +23,11 @@ You can add account to your servide through the command `/add` followed by the s
 **Receiving accounts**  
 The user needs just to run the command `/gen` followed by the service's name and he will receive the account in DM.  
 There is a 15 minutes cooldown by default, it can be changed in settings.json or through the command.
+
+## Screenshots
+![img](https://i.imgur.com/zXBQhG0.png)
+![img](https://i.imgur.com/e28XJdd.png)
+![img](https://i.imgur.com/ZVVw2YS.png)
 
 ## 🐾 Examples
 /add netflix useraname1:password1 - This will add that account to the Netflix service  
