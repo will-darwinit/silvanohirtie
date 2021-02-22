@@ -8,6 +8,9 @@
 ## ❓ About
 This tool let your server's users to get accounts through a secure and advanced system.    
 
+## V4 Changelog
+Little update introduced, now instead of adding just one account, you can upload a txt file with some accounts and bulkupdate the service.
+
 ## V3 Changelog
 V3 is the biggest update this bot ever had.  
 What's changed is EVERYTHING, the code has been completely rewrote.   
@@ -18,7 +21,8 @@ What's changed is EVERYTHING, the code has been completely rewrote.
 
 ## ⚙️ How it works
 **Adding Accounts**  
-You can add account to your servide through the command `/add` followed by the service and then the username and password in this syntax: username:password
+You can add account to your servide through the command `/addone` followed by the service and then the username and password in this syntax: username:password  
+or, simply to `/add` and upload a .txt file with the accounts
   
 **Receiving accounts**  
 The user needs just to run the command `/gen` followed by the service's name and he will receive the account in DM.  
@@ -30,7 +34,8 @@ There is a 15 minutes cooldown by default, it can be changed in settings.json or
 ![img](https://i.imgur.com/ZVVw2YS.png)
 
 ## 🐾 Examples
-/add netflix useraname1:password1 - This will add that account to the Netflix service  
+/addone netflix useraname1:password1 - This will add that account to the Netflix service  
+/add netflix - upload a txt file with the accounts for netflix service
 /gen netflix - This will take the first account in the Netflix.json file and send it to the user 
 /check Netflix - You will receive a message with the amount of accounts on that service.  
 /stock - See the whole stock
