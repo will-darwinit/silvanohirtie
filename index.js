@@ -148,7 +148,7 @@ bot.on("message", async message => {
         let args = messageArray.slice(1);	
         var acc = args[1].split(":");	
 
-        fs.readFile(__dirname + "/" + args[0].toLowerCase() + ".json",function(r, data) { 	
+        fs.readFile(__dirname + "/" + args[0].toLowerCase() + ".json",function(err, data) { 	
         if(err){	
             let newnewData = 	
             [{	
