@@ -279,9 +279,10 @@ function formatDate(date) {
   return `${day}-${month}-${year}`;
 }
 
-app.listen(3000, () => {
-  console.log(`Example app listening at http://localhost:3000`);
-});
+app.listen(process.env.PORT || 3000),
+  () => {
+    console.log(`App Running!`);
+  };
 
 bot.on("message", async (message) => {
   if (message.author.bot) return;
