@@ -270,7 +270,7 @@ function getToday() {
     (log) => log.type == "gen" && formatDate(log.time) == formatDate(new Date())
   ).length;
 }
-
+//ya
 function formatDate(date) {
   date = new Date(date);
   let day = date.getDate();
