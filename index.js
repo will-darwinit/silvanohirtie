@@ -1,5 +1,8 @@
 const Discord = require("discord.js");
-const bot = new Discord.Client();
+const { Client, Intents } = require("discord.js");
+const bot = new BotClient({
+  ws: { intents: Intents.ALL },
+});
 const fs = require("fs");
 const generated = new Set();
 const express = require("express");
