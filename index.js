@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const { Client, Intents } = require("discord.js");
-const bot = new BotClient({
+const bot = new Client({
   ws: { intents: Intents.ALL },
 });
 const fs = require("fs");
