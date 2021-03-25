@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const { Client, Intents } = require("discord.js");
 const bot = new Client({
-  ws: { intents: Intents.ALL },
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
 const fs = require("fs");
 const generated = new Set();
