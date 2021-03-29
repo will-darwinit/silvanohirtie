@@ -465,46 +465,50 @@ bot.on("message", async (message) => {
   if (command === "help") {
     if (!message.member.hasPermission("ADMINISTRATOR")) {
       message.channel.send({
-        embed: {
-          title: "Commands",
-          color: 1127848,
-          fields: [
-            {
-              name: prefix + "gen SERVICENAME",
-              value: "generate an account of that service.",
-            },
-            {
-              name: prefix + "stock",
-              value: "check the services and the accounts..",
-            },
-          ],
-        },
+        embeds: [
+          {
+            title: "Commands",
+            color: 1127848,
+            fields: [
+              {
+                name: prefix + "gen SERVICENAME",
+                value: "generate an account of that service.",
+              },
+              {
+                name: prefix + "stock",
+                value: "check the services and the accounts..",
+              },
+            ],
+          },
+        ],
       });
     } else {
       message.channel.send({
-        embed: {
-          title: "Commands",
-          color: 1127848,
-          fields: [
-            {
-              name: prefix + "gen SERVICENAME",
-              value: "generate an account of that service.",
-            },
-            {
-              name: prefix + "stock",
-              value: "check the services and the accounts..",
-            },
-            {
-              name: prefix + "add SERVICENAME ACCOUNT",
-              value: "Add account/code to that service",
-            },
-            {
-              name: prefix + "change OPTION VALUE",
-              value:
-                "change prefix,cooldown or channelId to a value, for the cooldown remember that the value must be in ms",
-            },
-          ],
-        },
+        embeds: [
+          {
+            title: "Commands",
+            color: 1127848,
+            fields: [
+              {
+                name: prefix + "gen SERVICENAME",
+                value: "generate an account of that service.",
+              },
+              {
+                name: prefix + "stock",
+                value: "check the services and the accounts..",
+              },
+              {
+                name: prefix + "add SERVICENAME ACCOUNT",
+                value: "Add account/code to that service",
+              },
+              {
+                name: prefix + "change OPTION VALUE",
+                value:
+                  "change prefix,cooldown or channelId to a value, for the cooldown remember that the value must be in ms",
+              },
+            ],
+          },
+        ],
       });
     }
   }
