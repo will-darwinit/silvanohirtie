@@ -1,5 +1,7 @@
 const Discord = require("discord.js");
 const { Client, Intents } = require("discord.js");
+const { Permissions } = require("discord.js");
+
 const bot = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
@@ -422,7 +424,7 @@ bot.on("message", async (message) => {
     });
   }
   if (command === "change") {
-    if (!message.member.hasPermission("ADMINISTRATOR"))
+    if (!message.member.has(Permissions.FLAGS.KICK_MEMBERS))
       return message.reply("Sorry, you can't do it, you are not an admin!");
     let messageArray = message.content.split(" ");
     let args = messageArray.slice(1);
