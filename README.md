@@ -6,10 +6,11 @@ Alpine let your server's users to get accounts through a secure and advanced sys
 ## 💰 Plans
 - Premium:  
 
-  - 7$ / month. 
-  - 60$ / year (24$ Discount).  
+  - 7$ / month 
+  - 60$ / year (24$ Discount)  
   
-    (Contact on discord: Silvano#9542 or email: hirtie.silvano@gmail.com). 
+    Send Message on Discord: Silvano#9542 (MESSAGE, NOT ONLY FRIEND REQUEST)  
+    or email: hirtie.silvano@gmail.com
   
 
 - Basic:  
