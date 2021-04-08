@@ -48,8 +48,8 @@ If you have the premium one, navigate to the "Bot Settings" section and change i
 
 ## Screenshots
 ### Premium:
-![img](https://i.imgur.com/VICEFTM.png)
-![img](https://i.imgur.com/mWAv1fc.png)
+![img](https://i.imgur.com/tw5ZWOm.png)
+![img](https://i.imgur.com/iCfTx3F.png)
 ### General:
 ![img](https://i.imgur.com/zXBQhG0.png)
 ![img](https://i.imgur.com/e28XJdd.png)
