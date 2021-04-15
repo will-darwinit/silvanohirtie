@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 let mainPath = path.join(__dirname, "..");
 const { MessageEmbed } = require("discord.js");
-
+const generated = new Set();
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("generate")
@@ -16,6 +16,10 @@ module.exports = {
     ),
 
   async execute(interaction) {
+    let user = interaction.user.username + "#" + interaction.user.discriminator;
+    if (generated.has(user))
+      return interaction.reply("Wait before generating another account...");
+
     let accounts = JSON.parse(
       fs.readFileSync(mainPath + "/accounts.json", "utf-8")
     );
@@ -27,7 +31,7 @@ module.exports = {
       fs.readFileSync(mainPath + "/settings.json", "utf-8")
     );
     let services = Object.keys(accounts);
-    let user = interaction.user.username + "#" + interaction.user.discriminator;
+
     const service = interaction.options
       .getString("service")
       .toLowerCase()
@@ -95,5 +99,9 @@ module.exports = {
 
     fs.writeFileSync(mainPath + "/logs.json", JSON.stringify(logs));
     fs.writeFileSync(mainPath + "/accounts.json", JSON.stringify(accounts));
+    generated.add(user);
+    setTimeout(() => {
+      talkedRecently.delete(user);
+    }, parseInt(settings.cooldown));
   },
 };
