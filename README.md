@@ -2,6 +2,8 @@
 
 ## ❓ About
 Alpine let your server's users to get accounts through a secure and advanced system.    
+Contact me on discord for any problem: Silvano#9542 
+
 
 ## 💰 Plans
 - Premium:  
@@ -52,11 +54,13 @@ If you have the premium one, navigate to the "Bot Settings" section and change i
 ![img](https://i.imgur.com/tw5ZWOm.png)
 ![img](https://i.imgur.com/iCfTx3F.png)
 ### General:
-![img](https://i.imgur.com/U5Qifp2.png)
-![img](https://i.imgur.com/Sn2DrNj.png)
-![img](https://i.imgur.com/8VZaU4J.png)
-![img](https://i.imgur.com/hUNjdn1.png)
+![img](https://i.imgur.com/U5Qifp2.png)  
 
+![img](https://i.imgur.com/Sn2DrNj.png). 
+
+![img](https://i.imgur.com/8VZaU4J.png). 
+
+![img](https://i.imgur.com/hUNjdn1.png).  
 
 Contact me on discord for any problem: Silvano#9542
 
