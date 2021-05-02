@@ -101,7 +101,7 @@ module.exports = {
     fs.writeFileSync(mainPath + "/accounts.json", JSON.stringify(accounts));
     generated.add(user);
     setTimeout(() => {
-      talkedRecently.delete(user);
+      generated.delete(user);
     }, parseInt(settings.cooldown));
   },
 };
